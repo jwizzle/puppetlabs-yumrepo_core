@@ -1,6 +1,6 @@
 {
   "name": "puppetlabs-yumrepo_core",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "puppetlabs",
   "summary": "Manage client yum repo configurations by parsing yum INI configuration files.",
   "license": "Apache-2.0",
@@ -30,7 +30,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 6.0.0 < 8.0.0"
+      "version_requirement": ">= 5.0.0 < 8.0.0"
     }
   ],
   "pdk-version": "1.14.0",

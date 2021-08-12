@@ -418,6 +418,15 @@ Puppet::Type.newtype(:yumrepo) do
     munge(&munge_yum_bool)
   end
 
+  newproperty(:async) do
+    desc "Whether this repository has async enabled.
+    #{YUM_BOOLEAN_DOC}
+    #{ABSENT_DOC}"
+
+    newvalues(YUM_BOOLEAN, :absent)
+    munge(&munge_yum_bool)
+  end
+
   newproperty(:deltarpm_percentage) do
     desc "Percentage value that determines when to use deltas for this repository.
       When the delta is larger than this percentage value of the package, the
